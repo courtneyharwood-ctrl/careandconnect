@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Care & Connect</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+        </svg>
+        <span>Care &amp; Connect</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="#organizations">Organizations</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Be the Change:<br>Volunteer Locally</h1>
+        <p>Join us to make a real difference in Rye. Inspire hope and transform lives by volunteering today.</p>
+        <a href="#organizations" class="btn-hero">Join Us Today</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">9</span>
+          <span class="stat-label">Organizations</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">Westchester</span>
+          <span class="stat-label">Community Focus</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">All Ages</span>
+          <span class="stat-label">Welcome</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="section-divider"></div>
+
+  <!-- ORGANIZATIONS -->
+  <section id="organizations" class="section-orgs">
+    <div class="container">
+
+      <!-- SECTION HEADER + FILTER -->
+      <div class="section-header">
+        <h2>Volunteer Opportunities</h2>
+        <div class="filter-bar">
+          <div class="filter-label">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 6h18M7 12h10M11 18h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Filter by Age
+          </div>
+          <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-age="all">All Ages</button>
+            <button class="filter-btn" data-age="elementary">Elementary (8–12)</button>
+            <button class="filter-btn" data-age="middle">Middle School (13–15)</button>
+            <button class="filter-btn" data-age="high">High School (16–17)</button>
+            <button class="filter-btn" data-age="adult">College &amp; Adult (18+)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULTS COUNT -->
+      <div class="results-info">
+        <span id="resultsCount">8 organizations</span>
+      </div>
+
+      <!-- ORG GRID -->
+      <div class="org-grid" id="orgGrid">
+        <!-- Cards inserted by script.js -->
+      </div>
+
+      <!-- EMPTY STATE -->
+      <div class="empty-state" id="emptyState" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M8 15s1.5-2 4-2 4 2 4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="9" cy="10" r="1" fill="currentColor"/>
+          <circle cx="15" cy="10" r="1" fill="currentColor"/>
+        </svg>
+        <h3>No organizations match this age group</h3>
+        <p>Try selecting a different age filter above.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <div class="section-divider"></div>
+  <section id="about" class="section-about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <p class="about-eyebrow">About</p>
+        <h2>Connecting Westchester Volunteers with Community Need</h2>
+        <p>Care &amp; Connect is a free resource that makes it easy to find volunteer opportunities across Westchester County. We've gathered local nonprofits, their programs, and age requirements in one place — so you can spend less time searching and more time giving back.</p>
+        <p>Whether you're a student looking for service hours, a family wanting to pitch in together, or an adult ready to commit to a cause, there's a place for you here.</p>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat">
+          <span class="about-stat-number">9</span>
+          <span class="about-stat-label">Local nonprofits</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-number">All Ages</span>
+          <span class="about-stat-label">From elementary to adult</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-number">Free</span>
+          <span class="about-stat-label">Always free to use</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+        </svg>
+        <span>Care &amp; Connect</span>
+      </div>
+      <p class="footer-tagline">Connecting volunteers with meaningful opportunities in the Westchester community.</p>
+      <p class="footer-copy">&copy; 2025 Care &amp; Connect. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
